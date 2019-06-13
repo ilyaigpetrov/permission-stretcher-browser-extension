@@ -4,14 +4,12 @@
     <meta charset="utf-8">
     <title>Permissions Stretcher</title>
     <style>
-      button.granted::before {
-        content: '✓ '
-      }
-      button:not(.granted)::before {
-        content: '✗ '
+      input {
+        vertical-align: middle;
       }
     </style>
   <body>
+    <h1>Permissions</h1>
     <ul id="toBeRequested"></ul>
     <script src="index.mjs" type="module"></script>
   </head>

@@ -7,7 +7,9 @@
   "version": "0.0.0.1",
   "author": "ilyaigpetrov@gmail.com",
 
-  "browser_action": {},
+  "browser_action": {
+    "default_popup": "./pages/perm-stretcher/index.html"
+  },
 
   "background": {
     "persistent": false,
@@ -30,7 +32,6 @@
     "declarativeContent",
     "desktopCapture",
     "downloads",
-    "fontSettings",
     "gcm",
     "history",
     "identity",

@@ -8,8 +8,8 @@ import { optional } from '../../permissions.mjs';
         permissions: [perm],
       }, (ifGranted) =>
         resolve(`
-<li>
-  <input type="checkbox" ${ifGranted ? 'checked' : ''} data-perm="${perm}" id="perm-${perm}"><label for="perm-${perm}">${perm}</label>
+<li style="white-space: nowrap">
+  <button>test</button><input type="checkbox" ${ifGranted ? 'checked' : ''} data-perm="${perm}" id="perm-${perm}"><label for="perm-${perm}">${perm}</label>
 </li>`
       )),
     ),
@@ -33,6 +33,15 @@ import { optional } from '../../permissions.mjs';
         alert(`Change denied. Reason: ${msg || 'unknown'}.`);
       }
     });
+  };
+
+  toBeRequested.onclick = (event) => {
+
+    const button = event.target;
+    if(button.tagName !== 'BUTTON') {
+      return;
+    }
+    console.log(chrome.tabs.executeScript({ code: 'alert("INJECTED!")' }));
   };
 
 })();
