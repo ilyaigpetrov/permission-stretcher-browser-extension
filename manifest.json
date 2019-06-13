@@ -1,0 +1,59 @@
+{
+
+  "manifest_version": 2,
+
+  "name": "What Extensions Can Do",
+  "description": "Test what extensions permissions can really do with your browser",
+  "version": "0.0.0.1",
+  "author": "ilyaigpetrov@gmail.com",
+
+  "browser_action": {},
+
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "./background.js"
+    ]
+  },
+
+  "optional_permissions": [
+    "activeTab",
+    "alarms",
+    "background",
+    "bookmarks",
+    "browsingData",
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "contextMenus",
+    "cookies",
+    "declarativeContent",
+    "desktopCapture",
+    "downloads",
+    "fontSettings",
+    "gcm",
+    "history",
+    "identity",
+    "idle",
+    "notifications",
+    "pageCapture",
+    "power",
+    "printerProvider",
+    "privacy",
+    "sessions",
+    "storage",
+    "system.cpu",
+    "system.display",
+    "system.memory",
+    "system.storage",
+    "tabCapture",
+    "tabs",
+    "topSites",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+
+}
