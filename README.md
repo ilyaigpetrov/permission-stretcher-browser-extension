@@ -1,0 +1,1 @@
+# permission-stretcher-browser-extension
