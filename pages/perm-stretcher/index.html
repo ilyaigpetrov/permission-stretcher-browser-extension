@@ -3,9 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Permissions Stretcher</title>
+    <style>
+      button.granted::before {
+        content: '✓ '
+      }
+      button:not(.granted)::before {
+        content: '✗ '
+      }
+    </style>
   <body>
-    Hello, World!
-    <script src="index.js"></script>
+    <ul id="toBeRequested"></ul>
+    <script src="index.mjs" type="module"></script>
   </head>
   </body>
 </html>
